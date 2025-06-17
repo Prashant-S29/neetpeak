@@ -4,3 +4,4 @@ export * from "./KeyFeature";
 export * from "./TestTypes";
 export * from "./AppBanner";
 export * from "./Testimonials";
+export * from "./Community";

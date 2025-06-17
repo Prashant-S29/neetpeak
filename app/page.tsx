@@ -1,6 +1,7 @@
 import React from "react";
 import {
   AppBanner,
+  Community,
   Hero,
   KeyFeature,
   Testimonials,
@@ -10,13 +11,14 @@ import {
 
 const Home: React.FC = () => {
   return (
-    <div className="flex flex-col gap-[80px] container mx-auto w-full py-[50px]">
+    <div className="flex flex-col ">
       <Hero />
-      <TopCourses />
+      <Community />
       <KeyFeature />
+      <Testimonials />
+      {/* <TopCourses /> */}
       <TestTypes />
       <AppBanner />
-      <Testimonials />
     </div>
   );
 };

@@ -41,7 +41,7 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
-  --color-brand: var(--brand)
+  --color-brand: var(--brand);
 }
 
 :root {
@@ -78,6 +78,7 @@
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
   --brand: oklch(42.4% 0.199 265.638);
+  /* --brand: oklch(0.6999 0.124 229.61); */
   --font-inter: var(--font-inter);
 }
 

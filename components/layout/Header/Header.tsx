@@ -9,7 +9,7 @@ export const Header: React.FC = () => {
   const path = usePathname();
   return (
     <>
-      <div className="bg-brand w-full py-4 flex justify-center">
+      {/* <div className="bg-brand w-full py-4 flex justify-center">
         <div className="container w-full flex justify-between items-center">
           <h1 className="text-white font-medium text-base">
             One on One mentorship are now live
@@ -19,51 +19,41 @@ export const Header: React.FC = () => {
             Enroll Now
           </Button>
         </div>
-      </div>
-      <header className="w-full flex justify-center py-4 border-b">
+      </div> */}
+      <header className="w-full bg-[#F3F5FB]   top-0 border-b border-brand/20 z-50 flex justify-center py-4 ">
         <div className="container w-full flex justify-between relative items-center">
           <h1 className="text-lg font-semibold">NeetPeak</h1>
 
           <nav className="flex gap-9 items-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ">
             <Link
               href="/"
-              className={`font-medium ${path === "/" && "underline underline-offset-4"}`}
+              className={`text-sm hover:underline underline-offset-4 ${path === "/" && "underline"}`}
             >
               Home
             </Link>
             <Link
               href="/about"
-              className={`font-medium ${path === "/about" && "underline underline-offset-4"}`}
+              className={`text-sm hover:underline underline-offset-4 ${path === "/about" && "underline"}`}
             >
               About
             </Link>
             <Link
               href="/mentorship"
-              className={`font-medium ${path === "/mentorship" && "underline underline-offset-4"}`}
+              className={`text-sm hover:underline underline-offset-4 ${path === "/mentorship" && "underline"}`}
             >
               Mentorship
             </Link>
             <Link
               href="/contact"
-              className={`font-medium ${path === "/contact" && "underline underline-offset-4"}`}
+              className={`text-sm hover:underline underline-offset-4 ${path === "/contact" && "underline"}`}
             >
               Contact Us
             </Link>
           </nav>
 
-          <section className="flex gap-3">
-            <Button variant="brand" size="lg" className="font-semibold">
-              Login
-            </Button>
-
-            <Button
-              variant="outline"
-              size="lg"
-              className="text-brand border-brand hover:text-brand"
-            >
-              Join Free
-            </Button>
-          </section>
+          <Button variant="brand" size="lg" className="font-semibold">
+            Login | Signup
+          </Button>
         </div>
       </header>
     </>
